@@ -1,0 +1,134 @@
+html , body , table{
+	width:100%;
+	height:100%;
+}
+
+body{
+	font-size:12px;
+	margin:0;
+	background:url(../image/bg.jpg);
+}
+
+select , input , button{
+	background-color:transparent !important;
+	background-color:#A5A5A5;
+	position:absolute;
+}
+
+select{
+	width:120px;
+	right:0;
+	top:10px;
+}
+
+option.new{color:#000}
+option.fight{color:#f00}
+option.end{color:#fff}
+
+input{
+	width:94px;
+	left:100px;
+	top:150px;
+}
+
+button{
+	left:202px;
+	top:150px;
+	font-weight:bold;
+}
+
+.Main{
+	cursor:default;
+	width:388px;
+	height:228px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	background:no-repeat url(../image/main.jpg);
+}
+
+.Main b{
+	position:absolute;
+	right:10px;
+	bottom:5px;
+	color:#444;
+}
+
+.Main i{
+	font-style:normal;
+	font-weight:bold;
+	font-size:14px;
+	position:absolute;
+	left:100px;
+	top:80px;
+	filter:DropShadow(Color=#ffffff, OffX=1, OffY=1);
+}
+
+.Board{
+	width:452px;
+	height:501px;
+	display:block;
+	position:relative;
+	background:no-repeat url(../image/board.jpg);
+}
+
+.Chess , .Focus{
+	width:43px;
+	height:43px;
+	display:block;
+	position:absolute;
+}
+
+.Chess{
+	background:url(../image/chess.gif) no-repeat 43px;
+}
+
+.Focus{
+	background:url(../image/focus.gif) no-repeat;
+}
+
+.Sound{width:0;height:0}
+
+.Hide{display:none}
+
+.Weak{
+	opacity:0.7;
+	filter:Alpha(opacity=70);
+}
+
+.C00		{background-position:-129px}
+.C01 , .C02	{background-position:-172px}
+.C03 , .C04	{background-position:-215px}
+.C05 , .C06	{background-position:-43px}
+.C07 , .C08	{background-position:0}
+.C09 , .C010{background-position:-86px}
+.C011 , .C012 , .C013 , .C014 , .C015{background-position:-258px}
+
+.C10		{background-position:-430px}
+.C11 , .C12	{background-position:-473px}
+.C13 , .C14	{background-position:-516px}
+.C15 , .C16	{background-position:-344px}
+.C17 , .C18	{background-position:-301px}
+.C19 , .C110{background-position:-387px}
+.C111 , .C112 , .C113 , .C114 , .C115{background-position:-559px}
+
+.P00 , .P01 , .P02 , .P03 , .P04 , .P05 , .P06 , .P07 , .P08{top:11px}
+.P10 , .P11 , .P12 , .P13 , .P14 , .P15 , .P16 , .P17 , .P18{top:59px}
+.P20 , .P21 , .P22 , .P23 , .P24 , .P25 , .P26 , .P27 , .P28{top:107px}
+.P30 , .P31 , .P32 , .P33 , .P34 , .P35 , .P36 , .P37 , .P38{top:155px}
+.P40 , .P41 , .P42 , .P43 , .P44 , .P45 , .P46 , .P47 , .P48{top:203px}
+.P50 , .P51 , .P52 , .P53 , .P54 , .P55 , .P56 , .P57 , .P58{top:252px}
+.P60 , .P61 , .P62 , .P63 , .P64 , .P65 , .P66 , .P67 , .P68{top:300px}
+.P70 , .P71 , .P72 , .P73 , .P74 , .P75 , .P76 , .P77 , .P78{top:348px}
+.P80 , .P81 , .P82 , .P83 , .P84 , .P85 , .P86 , .P87 , .P88{top:396px}
+.P90 , .P91 , .P92 , .P93 , .P94 , .P95 , .P96 , .P97 , .P98{top:444px}
+
+.P00 , .P10 , .P20 , .P30 , .P40 , .P50 , .P60 , .P70 , .P80 , .P90{left:12px}
+.P01 , .P11 , .P21 , .P31 , .P41 , .P51 , .P61 , .P71 , .P81 , .P91{left:60px}
+.P02 , .P12 , .P22 , .P32 , .P42 , .P52 , .P62 , .P72 , .P82 , .P92{left:108px}
+.P03 , .P13 , .P23 , .P33 , .P43 , .P53 , .P63 , .P73 , .P83 , .P93{left:156px}
+.P04 , .P14 , .P24 , .P34 , .P44 , .P54 , .P64 , .P74 , .P84 , .P94{left:204px}
+.P05 , .P15 , .P25 , .P35 , .P45 , .P55 , .P65 , .P75 , .P85 , .P95{left:252px}
+.P06 , .P16 , .P26 , .P36 , .P46 , .P56 , .P66 , .P76 , .P86 , .P96{left:300px}
+.P07 , .P17 , .P27 , .P37 , .P47 , .P57 , .P67 , .P77 , .P87 , .P97{left:348px}
+.P08 , .P18 , .P28 , .P38 , .P48 , .P58 , .P68 , .P78 , .P88 , .P98{left:396px}

@@ -1,0 +1,40 @@
+<script language="JavaScript" runat="Server" src="script/json.js"></script>
+<script language="JavaScript" runat="Server">
+function Application_OnStart(){
+	var room = {};
+	Application("list")  = room.toJSONString();
+	Application("count") = 0;
+}
+
+function Application_OnEnd(){
+	Application("list")  = null;
+	Application("count") = null;
+}
+
+function Session_OnStart(){
+	Session.Timeout = 1;
+	Session("count") = 0;
+	Application.Lock();
+	Application("count")++;
+	Application.Unlock();
+}
+
+function Session_OnEnd(){
+	if(Session("type")){
+		(function(){
+			var sType = Session("type");
+			var sName = Session("name");
+			if(sType == "fight"){
+				var oList = fUpdate("list");
+				delete oList[sName];
+				fUpdate("list" , oList);
+				fUpdate(sName , null);
+			}
+		})();
+	}
+	Session.Abandon();
+	Application.Lock();
+	Application("count")--;
+	Application.Unlock();
+}
+</script>
